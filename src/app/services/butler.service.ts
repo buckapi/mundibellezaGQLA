@@ -4,6 +4,14 @@ import { Injectable } from '@angular/core';
   providedIn: 'root'
 })
 export class Butler {
+    car:any[]=[];
+    currency:number=1;
+    numProd:number=0;
+    preview:any={};
+    totalProducts:number=0;
+    imagePreviewProduct:string="";
+      subTotal:number=0;
+
     vector:any={};       
     string:string=""; 
     distance:string="";
@@ -18,7 +26,7 @@ export class Butler {
     limit:number=9;
     type:string="Passenger"; 
     placeholder:string="a donde deseas ir?"; 
-	  any:any[]=[]; 
+    any:any[]=[]; 
     number:number=0;
 
     constructor() { }

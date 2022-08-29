@@ -12,6 +12,8 @@ const routes: Routes = [
 { path: 'cart', loadChildren: () => import('./components/pages/cart/cart.module').then(m => m.CartModule) },
 { path: 'checkout', loadChildren: () => import('./components/pages/checkout/checkout.module').then(m => m.CheckoutModule) },
 { path: 'shop', loadChildren: () => import('./components/pages/shop/shop.module').then(m => m.ShopModule) },
+{ path: 'promos', loadChildren: () => import('./components/pages/promos/promos.module').then(m => m.PromosModule) },
+{ path: 'rastrea', loadChildren: () => import('./components/pages/rastrea/rastrea.module').then(m => m.RastreaModule) },
  { path:'**',pathMatch:'full',redirectTo:'home'}
 ];
 
