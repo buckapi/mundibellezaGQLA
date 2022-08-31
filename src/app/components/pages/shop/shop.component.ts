@@ -71,6 +71,8 @@ public quick(tix:any){
   }
   loadprev(indice:any
     ){
+    if(this.init>1){
+      
     // this.products$=[];
     console.log(indice);
     this.end=this.end-9;
@@ -79,6 +81,7 @@ public quick(tix:any){
       this.dataApi.getDataAPI(this._butler.skip,this._butler.limit);   
      this.products$=this.dataApi.products$;  
      // this._butler.limit=this._butler.limit+9; 
+    }
 
 
   }
