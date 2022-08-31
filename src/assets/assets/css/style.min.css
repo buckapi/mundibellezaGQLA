@@ -1971,7 +1971,7 @@ hr {
 
 .hero-slide-content .hero-slide-text-img {
     position: absolute;
-    top: 7px;
+    top: 0px;
     left: 2px;
     z-index: -1;
     pointer-events: none
@@ -2010,6 +2010,7 @@ hr {
     font-size: 67px;
     font-weight: 700;
     margin-bottom: 14px;
+    padding-top: 15px;
     text-transform: uppercase
 }
 
@@ -7998,7 +7999,7 @@ hr {
     font-size: 14px;
     padding: 18px 24px
 }
-..whatsapp {
+.whatsapp {
   position:fixed;
   width:40px;
   height:40px;

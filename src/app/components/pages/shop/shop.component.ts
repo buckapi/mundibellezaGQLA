@@ -17,7 +17,7 @@ export class ShopComponent implements OnInit {
   categories: any;
   categories$: any;
     public init:number=1;
-  public end:number=12;
+  public end:number=9;
   constructor(
    private apollo: Apollo,
     public dataApi: DataService,
