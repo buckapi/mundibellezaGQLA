@@ -12,6 +12,7 @@ import { NotificationsModule } from './components/pages/notifications/notificati
 import { RouterModule } from '@angular/router';
 import { NgxUsefulSwiperModule } from 'ngx-useful-swiper';
 // SERVICES
+import { FormsModule } from '@angular/forms'; 
 import { Butler } from './services/butler.service';
 import { HomeSelectorModule } from './shared/components/home-selector/home-selector.module';
 import { FooterModule } from './shared/components/footer/footer.module';
@@ -37,6 +38,7 @@ import { GraphQLModule } from './graphql.module';
     FooterModule, 
     FontAwesomeModule,
     HttpClientModule,
+        FormsModule,
     ServiceWorkerModule.register('ngsw-worker.js', {
       enabled: environment.production,
       // Register the ServiceWorker as soon as the app is stable

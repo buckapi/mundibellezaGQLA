@@ -9,8 +9,10 @@ export class Butler {
     numProd:number=0;
     preview:any={};
     totalProducts:number=0;
+    quantity:number=1;
     imagePreviewProduct:string="";
-      subTotal:number=0;
+    subTotal:number=0;
+    subTotalGral:number=0;
 
     vector:any={};       
     string:string=""; 

@@ -14,93 +14,37 @@
                                         <th class="product-name">Producto</th>
                                         <th class="product-price">Precio</th>
                                         <th class="product-quantity">Cantidad</th>
-                                        <th class="product-subtotal">Total</th>
+                                        <th class="product-subtotal">SubTotal</th>
                                     </tr>
                                 </thead>
                                 <tbody>
-                                    <tr class="tbody-item">
+                                    <tr class="tbody-item" *ngFor='let product of _butler.car ;let i = index'>
                                         <td class="product-remove">
-                                            <a class="remove" href="javascript:void(0)">×</a>
+                                            <a class="remove" (click)="remove(i)">×</a>
                                         </td>
                                         <td class="product-thumbnail">
                                             <div class="thumb">
-                                                <a href="#">
-                                                    <img src="assets/assets/images/shop/cart1.jpg" width="68" height="84" alt="Image-HasTech">
+                                                <a >
+                                                    <img src="{{product.image}}" width="68" height="84" alt="Image-HasTech">
                                                 </a>
                                             </div>
                                         </td>
                                         <td class="product-name">
-                                            <a class="title" href="#">Condimentum posuere consectetur urna</a>
+                                            <a class="title" href="#">{{product.product.name}}</a>
                                         </td>
                                         <td class="product-price">
-                                            <span class="price">$115.00</span>
+                                            <span class="price">{{product.product.price |  number:'1.0-2'}}</span>
                                         </td>
                                         <td class="product-quantity">
                                             <div class="pro-qty">
-                                                <input type="text" class="quantity" title="Quantity" value="1">
+                                                <input type="text" class="quantity" title="Quantity" value="{{product.quantity}}">
                                             </div>
                                         </td>
                                         <td class="product-subtotal">
-                                            <span class="price">$115.00</span>
+                                            <span class="price">${{product.subTotal |  number:'1.0-2'}}</span>
                                         </td>
                                     </tr>
-                                    <tr class="tbody-item">
-                                        <td class="product-remove">
-                                            <a class="remove" href="javascript:void(0)">×</a>
-                                        </td>
-                                        <td class="product-thumbnail">
-                                            <div class="thumb">
-                                                <a href="#">
-                                                    <img src="assets/assets/images/shop/cart2.jpg" width="68" height="84" alt="Image-HasTech">
-                                                </a>
-                                            </div>
-                                        </td>
-                                        <td class="product-name">
-                                            <a class="title" href="#">Kaoreet lobortis sagittis laoreet</a>
-                                        </td>
-                                        <td class="product-price">
-                                            <span class="price">$95.00</span>
-                                        </td>
-                                        <td class="product-quantity">
-                                            <div class="pro-qty">
-                                                <input type="text" class="quantity" title="Quantity" value="1">
-                                            </div>
-                                        </td>
-                                        <td class="product-subtotal">
-                                            <span class="price">$95.00</span>
-                                        </td>
-                                    </tr>
-                                    <tr class="tbody-item">
-                                        <td class="product-remove">
-                                            <a class="remove" href="javascript:void(0)">×</a>
-                                        </td>
-                                        <td class="product-thumbnail">
-                                            <div class="thumb">
-                                                <a href="#">
-                                                    <img src="assets/assets/images/shop/cart3.jpg" width="68" height="84" alt="Image-HasTech">
-                                                </a>
-                                            </div>
-                                        </td>
-                                        <td class="product-name">
-                                            <a class="title" href="#">Nostrum exercitationem itae ipsum</a>
-                                        </td>
-                                        <td class="product-price">
-                                            <span class="price">$79.00</span>
-                                        </td>
-                                        <td class="product-quantity">
-                                            <div class="pro-qty">
-                                                <input type="text" class="quantity" title="Quantity" value="1">
-                                            </div>
-                                        </td>
-                                        <td class="product-subtotal">
-                                            <span class="price">$79.00</span>
-                                        </td>
-                                    </tr>
-                                    <tr class="tbody-item-actions">
-                                        <td colspan="6">
-                                            <button type="submit" class="btn-update-cart" disabled>Volver a tienda</button>
-                                        </td>
-                                    </tr>
+                              
                                 </tbody>
                             </table>
                         </form>
@@ -122,35 +66,31 @@
                                         <tr class="cart-subtotal">
                                             <th>Subtotal</th>
                                             <td>
-                                                <span class="amount">$499.00</span>
+                                                <span class="amount">${{_butler.subTotalGral |  number:'1.0-2'}}</span>
                                             </td>
                                         </tr>
                                         <tr class="shipping-totals">
-                                            <th>Shipping</th>
+                                            <th>Entrega a domicilio</th>
                                             <td>
                                                 <ul class="shipping-list">
                                                     
                                                     <li class="radio">
-                                                        <input type="radio" name="shipping" id="radio1" checked>
-                                                        <label for="radio1">Delivery Nacional: <span>$3.00</span></label>
+                                                        <input type="radio" name="shipping" id="radio1" checked [hidden]="_butler.subTotalGral>120000">
+                                                        <label for="radio1" [hidden]="this._butler.subTotalGral>120000"><span>${{delivery  |  number:'1.0-2'}}</span></label>
+                                                          <label for="radio1" [hidden]="this._butler.subTotalGral<120000"><span>envio gratis</span></label>
                                                     </li>
-                                                    <li class="radio">
-                                                        <input type="radio" name="shipping" id="radio2">
-                                                        <label for="radio2">Delivery Bogota</label>
-                                                    </li>
-                                                    <li class="radio">
-                                                        <input type="radio" name="shipping" id="radio3">
-                                                        <label for="radio3">Retiro en Local</label>
-                                                    </li>
+                                                  
                                                 </ul>
                                                 <p class="destination">Envios a toda <strong>Colombia</strong>.</p>
+                                                 <p class="destination"> <strong>De uno (1) a dos (2) dias hábiles en Bogotá</strong>.</p>
+                                                 <p class="destination"> <strong>De tres (3) a cinco (5) dias hábiles a nivel nacional</strong>.</p>
                                                <!--  <a href="javascript:void(0)" class="btn-shipping-address">Change address</a> -->
                                             </td>
                                         </tr>
                                         <tr class="order-total">
                                             <th>Total</th>
                                             <td>
-                                                <span class="amount">$504.00</span>
+                                                <span class="amount">${{totalGral |  number:'1.0-2'}}</span>
                                             </td>
                                         </tr>
                                     </tbody>

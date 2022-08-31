@@ -62,14 +62,12 @@
                         <button type="button" class="btn-close" data-bs-dismiss="modal">
                             <i class="fa fa-times"></i>
                         </button>
-                        <div class="modal-action-messages">
-                            <i class="fa fa-check-square-o"></i> AAgregado al carro!
-                        </div>
+                       
                         <div class="modal-action-product">
                             <div class="thumb">
-                                <img src="assets/assets/images/shop/modal1.jpg" alt="Organic Food Juice" width="466" height="320">
+                                <img src="{{_butler.imagePreviewProduct}}" alt="Organic Food Juice" width="466" height="320">
                             </div>
-                            <h4 class="product-name"><a href="">Readable content DX22</a></h4>
+                            <h4 class="product-name"><a href="">Agregado al carro</a></h4>
                         </div>
                     </div>
                 </div>
@@ -130,13 +128,14 @@
                                         <p class="mb-6">{{_butler.preview.description}}</p>
                                         <div class="product-details-pro-qty">
                                             <div class="pro-qty">
-                                                <input type="text" title="Cantidad" value="01">
+                                                  <div class= "dec qty-btn"  (click)="minus()">-</div>
+                                                <input  title="Quantity" [(ngModel)]="this.quantity">    <div class="inc qty-btn"  (click)="plus()">+</div>
                                             </div>
                                         </div>
                                         <div class="product-details-action">
-                                            <h4 class="price">COLP {{_butler.preview.price}}</h4>
+                                            <h4 class="price">$ {{_butler.preview.price |  number:'1.0-2' }}</h4>
                                             <div class="product-details-cart-wishlist">
-                                                <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#action-CartAddModal">Agregar al carro</button>
+                                                <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#action-CartAddModal"(click)="addToCar()" >Agregar al carro</button>
                                             </div>
                                         </div>
                                     </div>
@@ -158,27 +157,27 @@
             <button class="btn-aside-cart-close" data-bs-dismiss="offcanvas" aria-label="Close">Carrito <i class="fa fa-chevron-right"></i></button>
         </div>
         <div class="offcanvas-body">
-            <ul class="aside-cart-product-list">
-                <li class="aside-product-list-item">
-                    <a href="index.html#/" class="remove">×</a>
+            <ul class="aside-cart-product-list" *ngIf="_butler.car.length!=0">
+                <li class="aside-product-list-item" *ngFor='let product of _butler.car ;let i = index '[hidden]="i>4">
+                    <a  class="remove">×</a>
                     <a href="">
-                        <img src="assets/assets/images/shop/cart1.jpg" width="68" height="84" alt="Image">
-                        <span class="product-title">Leather Mens Slipper</span>
+                        <img src="{{product.image}}" width="68" height="84" alt="Image">
+                        <span class="product-title">{{product.product.name}}</span>
                     </a>
-                    <span class="product-price">1 × £69.99</span>
+                    <span class="product-price">{{product.quantity}} × ${{product.product.price |  number:'1.0-2'}} = ${{product.subTotal |  number:'1.0-2'}}</span>
                 </li>
-                <li class="aside-product-list-item">
-                    <a href="index.html#/" class="remove">×</a>
-                    <a href="">
-                        <img src="assets/assets/images/shop/cart2.jpg" width="68" height="84" alt="Image">
-                        <span class="product-title">Quickiin Mens shoes</span>
-                    </a>
-                    <span class="product-price">1 × £20.00</span>
+                 <li class="aside-product-list-item"  >
+                      <span class="product-price"  [routerLink]="['/cart']" >y () productos mas</span>
+                  
+                    
+                  
                 </li>
+               
             </ul>
-            <p class="cart-total"><span>Subtotal:</span><span class="amount">£89.99</span></p>
-            <a class="btn-total" href="#">Ver detalle</a>
-            <a class="btn-total" href="#">Finalizar compra</a>
+               <p class="cart-total"  [hidden]="_butler.subTotalGral!=0"><span >Sin productos en el carro:</span></p>
+            <p class="cart-total"  [hidden]="_butler.subTotalGral==0"><span >Subtotal:</span><span class="amount">${{_butler.subTotalGral |  number:'1.0-2'}}</span></p>
+            <a class="btn-total "  data-bs-dismiss="offcanvas" [routerLink]="['cart']" [hidden]="_butler.subTotalGral==0">Ver detalle</a>
+            <a class="btn-total"  [hidden]="_butler.subTotalGral==0" >Finalizar compra</a>
         </div>
     </aside>
     <!--== End Aside Cart ==-->

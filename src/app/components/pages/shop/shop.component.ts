@@ -16,6 +16,8 @@ export class ShopComponent implements OnInit {
   products$: any;  
   categories: any;
   categories$: any;
+    public init:number=1;
+  public end:number=12;
   constructor(
    private apollo: Apollo,
     public dataApi: DataService,
@@ -25,7 +27,7 @@ export class ShopComponent implements OnInit {
 
   loadProducts(){
     this._butler.skip=0;
-    this._butler.limit=9;
+    this._butler.limit=this._butler.limit+9;
      
   }
 
@@ -40,6 +42,7 @@ export class ShopComponent implements OnInit {
 public quick(tix:any){
     let tixToView = tix;
     this._butler.preview=tixToView;
+        this._butler.quantity=1;
     // this._butler.preview.quantity=1; 
     this._butler.imagePreviewProduct=this._butler.preview.images[0];
       // this.router.navigate(['/product']);
@@ -47,6 +50,7 @@ public quick(tix:any){
  public viewProduct(tix:any){
     let tixToView = tix;
     this._butler.preview=tixToView;
+      this._butler.quantity=1;
     // this._butler.preview.quantity=1; 
     this._butler.imagePreviewProduct=this._butler.preview.images[0];
       this.router.navigate(['/product']);
@@ -56,7 +60,22 @@ public quick(tix:any){
     ){
     // this.products$=[];
     console.log(indice);
+    this.end=this.end+9;
+    this.init=this.init+9;
      this._butler.skip=this._butler.skip+9; 
+      this.dataApi.getDataAPI(this._butler.skip,this._butler.limit);   
+     this.products$=this.dataApi.products$;  
+     // this._butler.limit=this._butler.limit+9; 
+
+
+  }
+  loadprev(indice:any
+    ){
+    // this.products$=[];
+    console.log(indice);
+    this.end=this.end-9;
+    this.init=this.init-9;
+     this._butler.skip=this._butler.skip-9; 
       this.dataApi.getDataAPI(this._butler.skip,this._butler.limit);   
      this.products$=this.dataApi.products$;  
      // this._butler.limit=this._butler.limit+9; 

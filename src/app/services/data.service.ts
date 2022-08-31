@@ -33,6 +33,7 @@ query GetCategories($status: String!,$skip:Int,$limit:Int) {
 const GETPRODUCTS =  gql`
 query GetProductsByStatus($status: String!,$skip:Int,$limit:Int) {
   getProductsByStatus(status: $status,skip:$skip,limit:$limit) {
+    id
     name
     description
     presentation
@@ -45,8 +46,8 @@ query GetProductsByStatus($status: String!,$skip:Int,$limit:Int) {
   }
 }`;
 const GETBESTSELLER =  gql`
-query GetBestseller($status: String!,$skip:Int,$limit:Int) {
-  getBestseller(status: $status,skip:$skip,limit:$limit) {
+query GetBestseller($bestseller: Boolean!,$skip:Int,$limit:Int) {
+  getBestseller(bestseller: $bestseller,skip:$skip,limit:$limit) {
     name
     description
     presentation
@@ -59,8 +60,8 @@ query GetBestseller($status: String!,$skip:Int,$limit:Int) {
   }
 }`;
 const GETDISCOUNT =  gql`
-query GetDiscount($status: String!,$skip:Int,$limit:Int) {
-  getDiscount(status: $status,skip:$skip,limit:$limit) {
+query GetDiscount($discount: Boolean!,$skip:Int,$limit:Int) {
+  getDiscount(discount: $discount,skip:$skip,limit:$limit) {
     name
     description
     presentation
@@ -139,7 +140,7 @@ const LOGIN =  gql`
         this.apollo.watchQuery<any>({
             query: GETBESTSELLER,
             variables:{
-                status:"bestseller",
+                bestseller:true,
                 skip:vskip,
                 limit:vlimit,
             }
@@ -157,7 +158,7 @@ const LOGIN =  gql`
         this.apollo.watchQuery<any>({
             query: GETDISCOUNT,
             variables:{
-                status:"discount",
+                discount:true,
                 skip:vskip,
                 limit:vlimit,
             }

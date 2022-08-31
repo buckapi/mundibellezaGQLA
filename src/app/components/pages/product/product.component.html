@@ -26,8 +26,8 @@
                         <div class="col-lg-6">
                             <div class="product-details-thumb">
                                 <img src="{{_butler.imagePreviewProduct}}" width="570" height="693" alt="Image">
-                                <span class="flag-new" [hidden]="_butler.preview.status!='bestseller'">Mas vendido</span>
-                                     <span class="flag-new" [hidden]="_butler.preview.status!='discount'">Descuento</span>
+                                <span class="flag-new" [hidden]="this.preview.status!='bestseller'">Mas vendido</span>
+                                     <span class="flag-new" [hidden]="this.preview.status!='discount'">Descuento</span>
                             </div>
                         </div>
                         <div class="col-lg-6">
@@ -37,19 +37,25 @@
                                 
                                 <p class="mb-7">{{_butler.preview.description}}</p>
                                    <div class="product-details-pro-qty">
-                                            <div class="pro-qty">
-                                                <input type="text" title="Cantidad" value="01">
+                                            <div class="pro-qty" >
+                                           <div class= "dec qty-btn" (click)="minus()">-</div>
+                                                <input title="Cantidad" [(ngModel)]="this.quantity">
+                                            <div class="inc qty-btn" (click)="plus()">+</div>
                                             </div>
                                         </div>
                                 <div class="product-details-shipping-cost">
+                                   
                                     <input class="form-check-input" type="checkbox" value="" id="ShippingCost" checked>
                                     <label class="form-check-label" for="ShippingCost">Shipping </label>
                                 </div>
                                 <div class="product-details-action">
-                                    <h4 class="price">COLP {{_butler.preview.price}}</h4>
+                                    <h4 class="price">$ {{_butler.preview.price |  number:'1.0-2' }}</h4>
                                     <div class="product-details-cart-wishlist">
                                         
-                                        <button type="button" class="btn" data-bs-toggle="modal" (click)="addToCar()" >Agregar al carro</button>
+                                        <button type="button" class="btn"  (click)="addToCar()" [hidden]="sent" 
+                                        data-bs-toggle="modal" data-bs-target="#action-CartAddModal">Agregar al carro</button>
+                                        <span [hidden]="!sent"> Producto agregado al carrito</span> 
+                                        <button type="button" class="btn" [routerLink]="['/shop']" [hidden]="!sent" >tienda</button>
                              
                                     </div>
                                 </div>
@@ -62,13 +68,12 @@
             <!--== End Product Details Area Wrapper ==-->
 
             <!--== Start Product Banner Area Wrapper ==-->
-            <div class="container">
-                <!--== Start Product Category Item ==-->
+   <!--          <div class="container">
                 <a href="product.html" class="product-banner-item">
                     <img src="assets/assets/images/shop/banner/7.jpg" width="1170" height="240" alt="Image-HasTech">
                 </a>
-                <!--== End Product Category Item ==-->
-            </div>
+               
+            </div> -->
         
 
         </main>

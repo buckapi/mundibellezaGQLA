@@ -11,6 +11,17 @@ import { Feature } from '@app/interfaces/places';
 import { Apollo } from "apollo-angular";
 import { DataService } from '@app/services/data.service'; 
 import gql from "graphql-tag";
+
+
+interface productInterface {
+  id?:number;
+  name?:string;
+  ref?:string;
+  description?:string;
+  price?:number;
+  quantity?:number;
+}
+
 const getProductsQuery = gql`
 query GetProductsByStatus($status: String!) {
   getProductsByStatus(status: $status) {
@@ -73,6 +84,7 @@ link:string="";
   } 
  public viewProduct(tix:any){
     let tixToView = tix;
+  
     this._butler.preview=tixToView;
     // this._butler.preview.quantity=1; 
     this._butler.imagePreviewProduct=this._butler.preview.images[0];
