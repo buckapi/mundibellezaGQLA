@@ -22,6 +22,7 @@ public _butler:Butler,
 public setDep(i:any){
   this.indexCity=i;
   console.log(this.indexCity);
+  this.loaded=true;
 
 }
   ngOnInit(): void {

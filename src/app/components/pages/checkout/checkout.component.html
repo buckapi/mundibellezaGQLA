@@ -76,15 +76,16 @@
                                            
                                             <div class="col-md-12 mb-4">
                                                 <div class="form-group">
-                                                    <label for="district">Departamento <abbr class="required" title="required">*</abbr></label>
+                                                    <label >Departamento <abbr class="required" title="required">*</abbr></label>
                                                     <select  #loations class="form-control wide" (change)="setDep(loations.value)">
+
                                                         <option *ngFor='let location of locations ;let i = index' (click)="setDep(i)"value="{{i}}">{{location.dep}}</option>
                                                       
                                                     </select>
                                                 </div>
                                             </div>
 
-                                            <div class="col-md-12 mb-4">
+                                            <div class="col-md-12 mb-4" [hidden]="!loaded">
                                                 <div class="form-group"    >
                                                     <label for="district">Ciudad <abbr class="required" title="required">*</abbr></label>
                                                     <select class="form-control wide" *ngIf="locations[indexCity]!=undefined">
