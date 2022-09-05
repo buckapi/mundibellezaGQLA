@@ -142,27 +142,24 @@
                                             </tr>
                                         </thead>
                                         <tbody class="table-body">
-                                            <tr class="cart-item">
-                                                <td class="product-name">Satin gown <span class="product-quantity">× 1</span></td>
-                                                <td class="product-total">£69.99</td>
+                                            <tr class="cart-item" *ngFor='let product of _butler.car ;let i = index'>
+                                                <td class="product-name">{{product.product.name}} <span class="product-quantity">× {{product.quantity}}</span></td>
+                                                <td class="product-total">${{product.subTotal |  number:'1.0-2'}}</td>
                                             </tr>
-                                            <tr class="cart-item">
-                                                <td class="product-name">Printed cotton t-shirt <span class="product-quantity">× 1</span></td>
-                                                <td class="product-total">£20.00</td>
-                                            </tr>
+                                         
                                         </tbody>
                                         <tfoot class="table-foot">
                                             <tr class="cart-subtotal">
                                                 <th>Subtotal</th>
-                                                <td>£89.99</td>
+                                                <td>${{_butler.subTotalGral |  number:'1.0-2'}}</td>
                                             </tr>
                                             <tr class="shipping">
                                                 <th>Shipping</th>
-                                                <td>£2.00</td>
+                                                <td>---</td>
                                             </tr>
                                             <tr class="order-total">
                                                 <th>Total </th>
-                                                <td>£91.99</td>
+                                                <td>$</td>
                                             </tr>
                                         </tfoot>
                                     </table>

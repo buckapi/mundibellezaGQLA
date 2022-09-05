@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import {Butler} from '@app/services/butler.service';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-checkout',
@@ -7,7 +9,10 @@ import { Component, OnInit } from '@angular/core';
 })
 export class CheckoutComponent implements OnInit {
 
-  constructor() { }
+  constructor(
+public _butler:Butler,
+  public router:Router
+    ) { }
 
   ngOnInit(): void {
   }
