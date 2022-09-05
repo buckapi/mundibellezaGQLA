@@ -41,7 +41,7 @@
                         <div class="col-lg-6">
                             <!--== Start Billing Accordion ==-->
                             <div class="checkout-billing-details-wrap">
-                                <h2 class="title">Información de contato</h2>
+                                <h2 class="title">Información de contacto</h2>
                                 <div class="billing-form-wrap">
                                     <form action="product-checkout.html#" method="post">
                                         <div class="row">
@@ -51,42 +51,10 @@
                                                     <input id="f_name" type="text" class="form-control">
                                                 </div>
                                             </div>
-                                            
-                                            <div class="col-md-12">
+
+                                        <div class="col-md-12">
                                                 <div class="form-group">
-                                                    <label for="com_name">Nombre de compañia (opcional)</label>
-                                                    <input id="com_name" type="text" class="form-control">
-                                                </div>
-                                            </div>
-                                           
-                                            <div class="col-md-12">
-                                                <div class="form-group">
-                                                    <label for="street-address">Direccion exacta <abbr class="required" title="required">*</abbr></label>
-                                                    <input id="street-address" type="text" class="form-control" placeholder="House number and street name">
-                                                </div>
-                                                
-                                            </div>
-                                           
-                                            <div class="col-md-12 mb-4">
-                                                <div class="form-group">
-                                                    <label for="district">Departamento <abbr class="required" title="required">*</abbr></label>
-                                                    <select id="district" class="form-control wide">
-                                                        <option>Bogota</option>
-                                                        <option>Santander</option>
-                                                        <option>Algeria</option>
-                                                        <option>Armenia</option>
-                                                        <option>India</option>
-                                                        <option>Pakistan</option>
-                                                        <option>England</option>
-                                                        <option>London</option>
-                                                        <option>London</option>
-                                                        <option>China</option>
-                                                    </select>
-                                                </div>
-                                            </div>
-                                            <div class="col-md-12">
-                                                <div class="form-group">
-                                                    <label for="pz-code">Postcode / ZIP (optional)</label>
+                                                    <label for="pz-code">Cedula de ciudadania</label>
                                                     <input id="pz-code" type="text" class="form-control">
                                                 </div>
                                             </div>
@@ -102,13 +70,59 @@
                                                     <input id="email" type="text" class="form-control">
                                                 </div>
                                             </div>
+                                            
                                            
+                                         
+                                           
+                                            <div class="col-md-12 mb-4">
+                                                <div class="form-group">
+                                                    <label for="district">Departamento <abbr class="required" title="required">*</abbr></label>
+                                                    <select id="district" class="form-control wide">
+                                                        <option>Antioquia</option>
+                                                        <option>Santander</option>
+                                                        <option>Algeria</option>
+                                                        <option>Armenia</option>
+                                                        <option>India</option>
+                                                        <option>Pakistan</option>
+                                                        <option>England</option>
+                                                        <option>London</option>
+                                                        <option>London</option>
+                                                        <option>China</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+
+                                                  <div class="col-md-12 mb-4">
+                                                <div class="form-group">
+                                                    <label for="district">Ciudad <abbr class="required" title="required">*</abbr></label>
+                                                    <select id="district" class="form-control wide">
+                                                        <option>Bogota</option>
+                                                        <option>Cucuta</option>
+                                                        <option>Algeria</option>
+                                                        <option>Armenia</option>
+                                                        <option>India</option>
+                                                        <option>Pakistan</option>
+                                                        <option>England</option>
+                                                        <option>London</option>
+                                                        <option>London</option>
+                                                        <option>China</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                           
+                                                 <div class="col-md-12">
+                                                <div class="form-group mb-0">
+                                                     <label for="street-address">Direccion exacta <abbr class="required" title="required">*</abbr></label>
+                                                    <textarea id="order-notes" class="form-control" placeholder="Calle, Urbanizacion, # de casa."></textarea>
+                                                </div>
+                                            </div>
+                                          <!--  
                                             <div class="col-md-12">
                                                 <div class="form-group mb-0">
                                                     <label for="order-notes">Observaciones (opcional)</label>
                                                     <textarea id="order-notes" class="form-control" placeholder="Notes about your order, e.g. special notes for delivery."></textarea>
                                                 </div>
-                                            </div>
+                                            </div> -->
                                         </div>
                                     </form>
                                 </div>
@@ -156,7 +170,7 @@
                                         <div id="PaymentMethodAccordion">
                                             <div class="card">
                                                 <div class="card-header" id="check_payments">
-                                                    <h5 class="title" data-bs-toggle="collapse" data-bs-target="#itemOne" aria-controls="itemOne" aria-expanded="true">Mercado pago</h5>
+                                                    <h5 class="title" data-bs-toggle="collapse" data-bs-target="#itemOne" aria-controls="itemOne" aria-expanded="true">Pago en linea</h5>
                                                 </div>
                                                 <div id="itemOne" class="collapse show" aria-labelledby="check_payments" data-bs-parent="#PaymentMethodAccordion">
                                                     <div class="card-body">
@@ -184,16 +198,7 @@
                                                     </div>
                                                 </div>
                                             </div>
-                                            <div class="card">
-                                                <div class="card-header" id="check_payments4">
-                                                    <h5 class="title" data-bs-toggle="collapse" data-bs-target="#itemFour" aria-controls="itemTwo" aria-expanded="false">Pago con tarjeta</h5>
-                                                </div>
-                                                <div id="itemFour" class="collapse" aria-labelledby="check_payments4" data-bs-parent="#PaymentMethodAccordion">
-                                                    <div class="card-body">
-                                                        <p>Visa, Mastercard ...</p>
-                                                    </div>
-                                                </div>
-                                            </div>
+                                          
                                         </div>
                                         <p class="p-text">Su información esta protejida bajo los estandare de seguridad. <a>Politicas de privacidad.</a></p>
                                         <div class="agree-policy">
