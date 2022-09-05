@@ -178,7 +178,7 @@
                <p class="cart-total"  [hidden]="_butler.subTotalGral!=0"><span >Sin productos en el carro:</span></p>
             <p class="cart-total"  [hidden]="_butler.subTotalGral==0"><span >Subtotal:</span><span class="amount">${{_butler.subTotalGral |  number:'1.0-2'}}</span></p>
             <a class="btn-total "  data-bs-dismiss="offcanvas" [routerLink]="['cart']" [hidden]="_butler.subTotalGral==0">Ver detalle</a>
-            <a class="btn-total"  [hidden]="_butler.subTotalGral==0" >Finalizar compra</a>
+            <a class="btn-total"  [hidden]="_butler.subTotalGral==0"  [routerLink]="['checkout']" >Finalizar compra</a>
         </div>
     </aside>
     <!--== End Aside Cart ==-->
