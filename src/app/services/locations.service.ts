@@ -147,6 +147,53 @@ export const LOCATIONS: Location[] = [
       'Medellín',
       'Sabaneta'
     ]
+  },
+  {
+    dep: 'ARAUCA',
+    cities:[	
+      'Arauca',
+      'Arauquita',
+      'Cravo Norte',
+      'Fortul',
+      'Puerto Rondón',
+      'Saravena',
+      'Tame'
+    ]
+  },
+  {
+    dep: 'ARCHIPIELAGO DE SAN ANDRES',
+    cities:[	
+      'Providencia Y Santa Catalina',
+      'San Andres'
+    ]
+  },
+  {
+    dep: 'ATLÁNTICO',
+    cities:[	
+      'Barranquilla',
+      'Galapa',
+      'Malambo',
+      'Puerto Colombia',
+      'Soledad',
+      'Campo De La Cruz',
+      'Candelaria',
+      'Luruaco',
+      'Manati',
+      'Repelon',
+      'Santa Lucia',
+      'Suan',
+      'Baranoa',
+      'Palmar De Varela',
+      'Polonuevo',
+      'Ponedera',
+      'Sabanagrande',
+      'Sabanalarga',
+      'Juan De Acosta',
+      'Santo Tomas',
+      'Piojó',
+      'Tubara',
+      'Usiacuri'
+    ]
   }
   
   
