@@ -194,7 +194,62 @@ export const LOCATIONS: Location[] = [
       'Tubara',
       'Usiacuri'
     ]
+  },
+  {
+    dep: 'Bogota D.C',
+    cities:[
+      'Bogota D.C'	
+    ]
+  },
+  {
+    dep: 'BOLIVAR',
+    cities:[
+      'Cicuco',
+      'Hatillo De Loba',
+      'Margarita',
+      'Mompós',
+      'San Fernando',
+      'Talaigua Nuevo',
+      'Arjona',
+      'Arroyohondo',
+      'Calamar',
+      'Cartagena',
+      'Mahates',
+      'San Cristobal',
+      'San Estanislao',
+      'Santa Catalina',
+      'Santa Rosa De Lima',
+      'Soplaviento',
+      'Turbaco',
+      'Turbana',
+      'Villanueva',
+      'Altos Del Rosario',
+      'Barranco De Loba',
+      'Santo Tomas',
+      'El Peñon',
+      'Regidor',
+      'Río Viejo',
+      'San Martin De Loba ',
+      'Arenal',
+      'Cantagallo',
+      'Morales',
+      'San Pablo',
+      'Santa Rosa Del Sur',
+      'Achí',
+      'Magangué',
+      'Montecristo',
+      'San Jacinto Del Cauca',
+      'Tiquisio',
+      'Carmen De Bolívar',
+      'Córdoba',
+      'El Guamo',
+      'María La Baja',
+      'San Jacinto',
+      'San Juan Nepomuceno',
+      'Zambrano'		
+    ]
   }
+
   
   
 ];
