@@ -10,7 +10,7 @@ export const LOCATIONS: Location[] = [
       'La Pedrera',
       'La Victoria',
       'Leticia',
-      'Miriti - Paraná',
+      'Miriti Paraná',
       'Puerto Alegria',
       'Puerto Arica',
       'Puerto Nariño',
@@ -18,7 +18,7 @@ export const LOCATIONS: Location[] = [
       'Tarapacá' 	
     ]
   },
-{
+  {
     dep: 'ANTIOQUIA',
     cities:[
       'Cáceres',
