@@ -429,6 +429,30 @@ export const LOCATIONS: Location[] = [
       'Solita',
       'Valparaiso'
     ]
+  },
+  {
+    dep: 'CASANARE',
+    cities:[
+      'Aguazul',
+      'Chameza',
+      'Hato Corozal',
+      'La Salina',
+      'Maní',
+      'Monterrey',
+      'Nunchía',
+      'Orocué',
+      'Paz De Ariporo',
+      'Pore',
+      'Recetor',
+      'Sabanalarga',
+      'Sácama',
+      'San Luis De Palenque',
+      'Támara',
+      'Tauramena',
+      'Trinidad',
+      'Villanueva',
+      'Yopal'
+    ]
   }
 	
 
