@@ -1219,50 +1219,48 @@ export const LOCATIONS: Location[] = [
   {
     dep: 'VALLE DEL CAUCA',
     cities:[
-      'Guaranda',
-      'Andalucía
-      Buga
-      Bugalagrande
-      Calima
-      El Cerrito
-      Ginebra
-      Guacarí
-      Restrepo
-      Riofrio
-      San Pedro
-      Trujillo
-      Tuluá
-      Yotoco
-      Alcala
-      Ansermanuevo
-      Argelia
-      Bolívar
-      Cartago
-      El Águila
-      El Cairo
-      El Dovio
-      La Unión
-      La Victoria
-      Obando
-      Roldanillo
-      Toro
-      Ulloa
-      Versalles
-      Zarzal
-      Buenaventura
-      Caicedonia
-      Sevilla
-      Cali
-      Candelaria
-      Dagua
-      Florida
-      Jamundí
-      La Cumbre
-      Palmira
-      Pradera
-      Vijes
-      Yumbo
-      Yavaraté
+      'Buga',
+      'Bugalagrande',
+      'Calima',
+      'El Cerrito',
+      'Ginebra',
+      'Guacarí',
+      'Restrepo',
+      'Riofrio',
+      'San Pedro',
+      'Trujillo',
+      'Tuluá',
+      'Yotoco',
+      'Alcala',
+      'Ansermanuevo',
+      'Argelia',
+      'Bolívar',
+      'Cartago',
+      'El Águila',
+      'El Cairo',
+      'El Dovio',
+      'La Unión',
+      'La Victoria',
+      'Obando',
+      'Roldanillo',
+      'Toro',
+      'Ulloa',
+      'Versalles',
+      'Zarzal',
+      'Buenaventura',
+      'Caicedonia',
+      'Sevilla',
+      'Cali',
+      'Candelaria',
+      'Dagua',
+      'Florida',
+      'Jamundí',
+      'La Cumbre',
+      'Palmira',
+      'Pradera',
+      'Vijes',
+      'Yumbo',
+      'Yavaraté'
     ]
   },
   {
