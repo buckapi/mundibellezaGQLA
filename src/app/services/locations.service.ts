@@ -987,6 +987,26 @@ export const LOCATIONS: Location[] = [
         'Ragonvalia',
         'Toledo'
     ]
+  },
+  {
+    dep: 'PUTUMAYO',
+    cities:[
+        'Colón',
+        'Mocoa',
+        'Orito',
+        'Puerto Asis',
+        'Puerto Caicedo',
+        'Puerto Guzman',
+        'Puerto Leguizamo',
+        'San Francisco',
+        'San Miguel',
+        'Santiago',
+        'Sibundoy',
+        'Valle Del Guamuez',
+        'Villa Garzon'
+    ]
   }
+
+  
 		
 ];
