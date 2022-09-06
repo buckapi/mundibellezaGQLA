@@ -1133,5 +1133,36 @@ export const LOCATIONS: Location[] = [
       'Sucre',
       'Vélez'
     ]
+  },
+  {
+    dep: 'SUCRE',
+    cities:[
+      'Guaranda',
+      'Majagual',
+      'Sucre',
+      'Chalán',
+      'Coloso',
+      'Morroa',
+      'Ovejas',
+      'Sincelejo',
+      'Coveñas',
+      'Palmito',
+      'San Onofre',
+      'Santiago De Tolú',
+      'Tolú Viejo',
+      'Buenavista',
+      'Corozal',
+      'El Roble',
+      'Galeras',
+      'Los Palmitos',
+      'Sampués',
+      'San Juan Betulia',
+      'San Pedro',
+      'Sincé',
+      'Caimito',
+      'La Unión',
+      'San Benito Abad',
+      'San Marcos'
+    ]
   }
 ];
