@@ -453,6 +453,36 @@ export const LOCATIONS: Location[] = [
       'Villanueva',
       'Yopal'
     ]
+  },
+  {
+    dep: 'CAUCA',
+    cities:[
+      'Becerril',
+      'Chimichagua',
+      'Chiriguana',
+      'Curumaní',
+      'La Jagua De Ibirico',
+      'Pailitas',
+      'Tamalameque',
+      'Astrea',
+      'Bosconia',
+      'El Copey',
+      'El Paso',
+      'Agustín Codazzi',
+      'La Paz',
+      'Manaure',
+      'Pueblo Bello',
+      'San Diego',
+      'Valledupar',
+      'Aguachica',
+      'Gamarra',
+      'González',
+      'La Gloria',
+      'Pelaya',
+      'Río De Oro',
+      'San Alberto',
+      'San Martín'
+    ]
   }
 	
 
