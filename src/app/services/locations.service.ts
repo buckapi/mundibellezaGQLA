@@ -1168,125 +1168,118 @@ export const LOCATIONS: Location[] = [
   {
     dep: 'TOLIMA',
     cities:[
-      'Guaranda',
-      'Majagual',
-      'Sucre',
-      'Chalán',
-      'Coloso',
-      'Morroa',
-      'Ovejas',
-      'Sincelejo',
-      'Coveñas',
-      'Palmito',
-      'San Onofre',
-      'Santiago De Tolú',
-      'Tolú Viejo',
-      'Buenavista',
-      'Corozal',
-      'El Roble',
-      'Galeras',
-      'Los Palmitos',
-      'Sampués',
-      'San Juan Betulia',
-      'San Pedro',
-      'Sincé',
-      'Caimito',
-      'La Unión',
-      'San Benito Abad',
-      'San Marcos'
+      'Armero',
+      'Falan',      
+      'Fresno',
+      'Honda',
+      'Mariquita',
+      'Palocabildo',
+      'Carmen De Apicalá',
+      'Cunday',
+      'Icononzo',
+      'Melgar',
+      'Villarrica',
+      'Ataco',
+      'Chaparral',
+      'Coyaima',
+      'Natagaima',
+      'Ortega',
+      'Planadas',
+      'Rioblanco',
+      'Roncesvalles',
+      'San Antonio',
+      'Alvarado',
+      'Anzoátegui',
+      'Cajamarca',
+      'Coello',
+      'Espinal',
+      'Flandes',
+      'Ibague',
+      'Piedras',
+      'Rovira',
+      'San Luis',
+      'Valle De San Juan',
+      'Alpujarra',
+      'Dolores',
+      'Guamo',
+      'Prado',
+      'Purificación',
+      'Saldaña',
+      'Suárez',
+      'Casabianca',
+      'Herveo',
+      'Lerida',
+      'Libano',
+      'Murillov',
+      'Santa Isabel',
+      'Venadillo',
+      'Villahermosa'
     ]
   },
   {
     dep: 'VALLE DEL CAUCA',
     cities:[
       'Guaranda',
-      'Majagual',
-      'Sucre',
-      'Chalán',
-      'Coloso',
-      'Morroa',
-      'Ovejas',
-      'Sincelejo',
-      'Coveñas',
-      'Palmito',
-      'San Onofre',
-      'Santiago De Tolú',
-      'Tolú Viejo',
-      'Buenavista',
-      'Corozal',
-      'El Roble',
-      'Galeras',
-      'Los Palmitos',
-      'Sampués',
-      'San Juan Betulia',
-      'San Pedro',
-      'Sincé',
-      'Caimito',
-      'La Unión',
-      'San Benito Abad',
-      'San Marcos'
+      'Andalucía
+      Buga
+      Bugalagrande
+      Calima
+      El Cerrito
+      Ginebra
+      Guacarí
+      Restrepo
+      Riofrio
+      San Pedro
+      Trujillo
+      Tuluá
+      Yotoco
+      Alcala
+      Ansermanuevo
+      Argelia
+      Bolívar
+      Cartago
+      El Águila
+      El Cairo
+      El Dovio
+      La Unión
+      La Victoria
+      Obando
+      Roldanillo
+      Toro
+      Ulloa
+      Versalles
+      Zarzal
+      Buenaventura
+      Caicedonia
+      Sevilla
+      Cali
+      Candelaria
+      Dagua
+      Florida
+      Jamundí
+      La Cumbre
+      Palmira
+      Pradera
+      Vijes
+      Yumbo
+      Yavaraté
     ]
   },
   {
     dep: 'VAUPES',
     cities:[
-      'Guaranda',
-      'Majagual',
-      'Sucre',
-      'Chalán',
-      'Coloso',
-      'Morroa',
-      'Ovejas',
-      'Sincelejo',
-      'Coveñas',
-      'Palmito',
-      'San Onofre',
-      'Santiago De Tolú',
-      'Tolú Viejo',
-      'Buenavista',
-      'Corozal',
-      'El Roble',
-      'Galeras',
-      'Los Palmitos',
-      'Sampués',
-      'San Juan Betulia',
-      'San Pedro',
-      'Sincé',
-      'Caimito',
-      'La Unión',
-      'San Benito Abad',
-      'San Marcos'
+      'Mitú',
+      'Pacoa',
+      'Papunahua',
+      'Taraira'
     ]
   },
   {
     dep: 'VICHADA',
     cities:[
-      'Guaranda',
-      'Majagual',
-      'Sucre',
-      'Chalán',
-      'Coloso',
-      'Morroa',
-      'Ovejas',
-      'Sincelejo',
-      'Coveñas',
-      'Palmito',
-      'San Onofre',
-      'Santiago De Tolú',
-      'Tolú Viejo',
-      'Buenavista',
-      'Corozal',
-      'El Roble',
-      'Galeras',
-      'Los Palmitos',
-      'Sampués',
-      'San Juan Betulia',
-      'San Pedro',
-      'Sincé',
-      'Caimito',
-      'La Unión',
-      'San Benito Abad',
-      'San Marcos'
+      'La Primavera',
+      'Puerto Carreño',
+      'Santa Rosalía'
     ]
   }
 ];
