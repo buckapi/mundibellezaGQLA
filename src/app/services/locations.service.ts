@@ -375,6 +375,37 @@ export const LOCATIONS: Location[] = [
       'Tasco'
       
     ]
-  }
-  
+  },
+  {
+    dep: 'CALDAS',
+    cities:[
+      'La Merced',
+      'Marmato',
+      'Riosucio',
+      'Supía',
+      'Manzanares',
+      'Marquetalia',
+      'Marulanda',
+      'Pensilvania',
+      'Belalcázar',
+      'Risaralda',
+      'San José',
+      'Viterbo',
+      'Chinchina',
+      'Manizales',
+      'Neira',
+      'Palestina',
+      'Villamaria',
+      'Aguadas',
+      'Aranzazu',
+      'Pácora',
+      'Salamina',
+      'La Dorada',
+      'Norcasia',
+      'Samaná',
+      'Victoria'
+    ]
+  },
+	
+
 ];
