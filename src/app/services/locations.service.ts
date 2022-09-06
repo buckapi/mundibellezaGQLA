@@ -742,6 +742,69 @@ export const LOCATIONS: Location[] = [
         'Miraflores',
         'San José Del Guaviare'
     ]
+  },
+  {
+    dep: 'HUILA',
+    cities:[
+        'Agrado',
+        'Altamira',
+        'Garzón',
+        'Gigante',
+        'Guadalupe',
+        'Pital',
+        'Suaza',
+        'Tarqui',
+        'Aipe',
+        'Algeciras',
+        'Baraya',
+        'Campoalegre',
+        'Colombia',
+        'Hobo',
+        'Iquira',
+        'Neiva',
+        'Palermo',
+        'Rivera',
+        'Santa María',
+        'Tello',
+        'Teruel',
+        'Villavieja',
+        'Yaguará',
+        'La Argentina',
+        'La Plata',
+        'Nátaga',
+        'Paicol',
+        'Tesalia',
+        'Acevedo',
+        'Elías',
+        'Isnos',
+        'Oporapa',
+        'Palestina',
+        'Pitalito',
+        'Saladoblanco',
+        'San Agustín',
+        'Timaná'
+    ]
+  },
+  {
+    dep: 'LA GUAJIRA',
+    cities:[
+        'Albania',
+        'Dibulla',
+        'Maicao',
+        'Manaure',
+        'Riohacha',
+        'Uribia',
+        'Barrancas',
+        'Distraccion',
+        'El Molino',
+        'Fonseca',
+        'Hatonuevo',
+        'La Jagua Del Pilar',
+        'San Juan Del Cesar',
+        'Urumita',
+        'Villanueva'
+    ]
   }
-
+  
+		
 ];
