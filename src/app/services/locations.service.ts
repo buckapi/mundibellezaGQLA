@@ -1022,5 +1022,24 @@ export const LOCATIONS: Location[] = [
         'Montengro',
         'Quimbaya'
     ]
-  }	
+  },
+  {
+    dep: 'RISARALDA',
+    cities:[
+        'Dosquebradas',
+        'La Virginia',
+        'Marsella',
+        'Pereira',
+        'Santa Rosa De Cabal',
+        'Apía',
+        'Balboa',
+        'Belén De Umbría',
+        'Guática',
+        'La Celia',
+        'Quinchia',
+        'Santuario',
+        'Mistrató',
+        'Pueblo Rico'
+    ]
+  }
 ];
