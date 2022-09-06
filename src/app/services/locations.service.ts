@@ -406,6 +406,30 @@ export const LOCATIONS: Location[] = [
       'Victoria'
     ]
   },
+  {
+    dep: 'CAQUETA',
+    cities:[
+      'Albania',
+      'Belén De Los Andaquies',
+      'Cartagena Del Chairá',
+      'Currillo',
+      'El Doncello',
+      'El Paujil',
+      'Florencia',
+      'La Montañita',
+      'Milan',
+      'Morelia',
+      'El Paujil',
+      'Florencia',
+      'La Montañita',
+      'Puerto Rico',
+      'San Jose Del Fragua',
+      'San Vicente Del Caguán',
+      'Solano',
+      'Solita',
+      'Valparaiso'
+    ]
+  }
 	
 
 ];
