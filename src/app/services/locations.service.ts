@@ -1005,8 +1005,22 @@ export const LOCATIONS: Location[] = [
         'Valle Del Guamuez',
         'Villa Garzon'
     ]
-  }
-
-  
-		
+  },
+  {
+    dep: 'QUINDIO',
+    cities:[
+        'Armenia',
+        'Buenavista',
+        'Calarca',
+        'Cordoba',
+        'Genova',
+        'Pijao',
+        'Filandia',
+        'Salento',
+        'Circasia',
+        'La Tebaida',
+        'Montengro',
+        'Quimbaya'
+    ]
+  }	
 ];
