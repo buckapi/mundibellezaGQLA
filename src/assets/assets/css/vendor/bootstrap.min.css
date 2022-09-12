@@ -1466,7 +1466,8 @@ progress {
 
     .col-lg-12 {
         flex: 0 0 auto;
-        width: 100%
+        width: 100%;
+        background: #f823d3
     }
 
     .offset-lg-0 {
